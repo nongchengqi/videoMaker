@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import com.evan.aac.AACEncoder
-import com.evan.aac.Lame
+import com.evan.lame.Lame
 import com.evan.img2mp4.MuxAudioVideo
 import com.evan.videomaker.ui.theme.VideoMakerTheme
 import kotlinx.coroutines.Dispatchers

@@ -492,7 +492,7 @@ c_main(int argc, char *argv[]) {
 }
 
 JNIEXPORT jint JNICALL
-Java_com_evan_aac_Lame_executeNative(JNIEnv *env, jobject thiz, jobjectArray cmd) {
+Java_com_evan_lame_Lame_executeNative(JNIEnv *env, jobject thiz, jobjectArray cmd) {
     jint size = (*env)->GetArrayLength(env, cmd);
     char *argv[size];
     for (int i = 0; i < size; ++i) {

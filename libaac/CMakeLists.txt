@@ -14,8 +14,6 @@ include_directories(src/main/cpp/libfaac)
 include_directories(src/main/cpp/libfaac/kiss_fft)
 # pcm utils
 aux_source_directory(src/main/cpp AAC_ENC_SRC)
-include_directories(src/main/cpp/include AAC_INC_SRC)
-include_directories(src/main/cpp/frontend AAC_SHELL_SRC)
 aux_source_directory(src/main/cpp/libfaac LIB_AAC_SRC)
 aux_source_directory(src/main/cpp/libfaac/kiss_fft KISS_FFT_SRC)
 
@@ -28,7 +26,6 @@ add_definitions(-DHAVE_CONFIG_H)
 add_library(aacenc SHARED
         ${AAC_ENC_SRC}
         ${AAC_INC_SRC}
-        ${AAC_SHELL_SRC}
         ${LIB_AAC_SRC}
         ${KISS_FFT_SRC}
         src/main/cpp/frontend/main.c
